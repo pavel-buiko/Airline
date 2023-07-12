@@ -1,0 +1,279 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+a {
+  text-decoration: none;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Roboto;
+}
+
+body {
+  background-image: url(boim-H_6zuSsHMNo-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 22px;
+}
+body::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2862745098);
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body .headerwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+body .mecca {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%;
+  position: relative;
+}
+body .mecca::before {
+  display: inline-flex;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  bottom: 4px;
+  background: #349935;
+}
+body .mecca:hover::before {
+  width: 100%;
+}
+body .mecca::after {
+  display: inline-flex;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  bottom: 44px;
+  background: #349935;
+}
+body .mecca:hover::after {
+  width: 100%;
+}
+body header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4862745098);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+body header .menu, body header ul, body header ul li, body header div, body header a {
+  align-items: flex-end;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+body header ul {
+  width: 100%;
+}
+body header img {
+  height: 50px;
+  width: 50px;
+}
+body header li {
+  height: 100%;
+  margin: auto 20px;
+  list-style: none;
+  font-size: 18px;
+}
+body header li:last-of-type {
+  margin-right: 5px;
+}
+body header li:first-of-type {
+  margin-left: 5px;
+  text-align: right;
+}
+@media (min-width: 1440px) {
+  body header li {
+    margin: auto 30px;
+    font-size: 22px;
+  }
+}
+@media (width < 740px) {
+  body header li {
+    margin: auto 5px;
+    font-size: 16px;
+  }
+}
+@media (width < 390px) {
+  body header li {
+    font-size: 10px;
+    max-width: 60px;
+    margin: auto 5px;
+  }
+}
+@media (width < 340px) {
+  body header li {
+    font-size: 9px;
+    margin: auto 3px;
+  }
+}
+body header a {
+  text-align: center;
+  width: 150px;
+}
+@media (width < 600px) {
+  body header a {
+    max-width: 80px;
+  }
+}
+body header .firstLink {
+  position: relative;
+}
+body header .firstLink::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  right: 0;
+  bottom: -3px;
+  background: #349935;
+}
+body header .firstLink:hover::after {
+  width: 100%;
+}
+body header .firstLink:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px rgba(91, 91, 91, 0.705);
+}
+body header .secondLink {
+  position: relative;
+}
+body header .secondLink::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  left: 0;
+  bottom: -3px;
+  background: #349935;
+}
+body header .secondLink:hover::after {
+  width: 100%;
+}
+body header .secondLink:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px rgba(91, 91, 91, 0.705);
+}
+body .content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding-top: 10%;
+}
+@media (width < 400px) {
+  body .content {
+    padding-top: 15%;
+  }
+}
+body .description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1350px;
+  padding: 20px 20%;
+  margin-top: 8%;
+  font-size: 1.5rem;
+  flex: 1 1 auto;
+}
+@media (width < 900px) {
+  body .description {
+    height: 1450px;
+  }
+}
+@media (width < 500px) {
+  body .description {
+    height: 2000px;
+  }
+}
+@media (width < 380px) {
+  body .description {
+    height: 2400px;
+  }
+}
+@media (width < 700px) {
+  body .description {
+    padding: 10px;
+  }
+}
+body .description p {
+  box-sizing: border-box;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.368627451);
+  border-radius: 10px;
+  padding: 5px;
+}
+body .description p:hover {
+  background-color: rgba(0, 0, 0, 0.4274509804);
+}
+body footer {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 350px;
+  min-height: 280px;
+  font-size: 30px;
+  background: url(icons/pattern.svg);
+  background-size: cover;
+}
+body footer .footDescription {
+  display: inline-flex;
+  text-align: center;
+}
+body footer .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+body footer .Media {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: auto;
+}
+@media (width < 768px) {
+  body footer .Media {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (width < 540px) {
+  body footer figcaption {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

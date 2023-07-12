@@ -1,0 +1,286 @@
+@font-face {
+  font-family: Roboto;
+  src: url(../../fonts/Roboto-Light.ttf);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: white;
+  font-family: Roboto;
+}
+
+body {
+  background-image: url(../images/thomas-drouault-3dGU4xziUAM-unsplash.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: aliceblue;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  font-size: 22px;
+}
+body::after {
+  display: block;
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2862745098);
+  height: 100%;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+body .headerwrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.4862745098);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+header .menu, header ul, header ul li, header div, header a {
+  align-items: flex-end;
+  display: inline-flex;
+  justify-content: flex-end;
+}
+header ul {
+  width: 100%;
+}
+header img {
+  height: 50px;
+  width: 50px;
+}
+header li {
+  height: 100%;
+  margin: auto 20px;
+  list-style: none;
+  font-size: 18px;
+}
+header li:last-of-type {
+  margin-right: 5px;
+}
+header li:first-of-type {
+  margin-left: 5px;
+  text-align: right;
+}
+@media (min-width: 1440px) {
+  header li {
+    margin: auto 30px;
+    font-size: 22px;
+  }
+}
+@media (width < 740px) {
+  header li {
+    margin: auto 5px;
+    font-size: 16px;
+  }
+}
+@media (width < 390px) {
+  header li {
+    font-size: 10px;
+    max-width: 60px;
+    margin: auto 5px;
+  }
+}
+@media (width < 340px) {
+  header li {
+    font-size: 9px;
+    margin: auto 3px;
+  }
+}
+header a {
+  text-align: center;
+  width: 150px;
+}
+@media (width < 600px) {
+  header a {
+    max-width: 80px;
+  }
+}
+header .firstLink {
+  position: relative;
+}
+header .firstLink::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  right: 0;
+  bottom: -3px;
+  background: #FAC549;
+}
+header .firstLink:hover::after {
+  width: 100%;
+}
+header .firstLink:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px rgba(91, 91, 91, 0.705);
+}
+header .secondLink {
+  position: relative;
+}
+header .secondLink::after {
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  left: 0;
+  bottom: -3px;
+  background: #FAC549;
+}
+header .secondLink:hover::after {
+  width: 100%;
+}
+header .secondLink:hover {
+  transition: 1s;
+  text-shadow: 1px 1px 2px rgba(91, 91, 91, 0.705);
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding-top: 10%;
+}
+@media (width < 400px) {
+  .content {
+    padding-top: 15%;
+  }
+}
+.content p {
+  box-sizing: border-box;
+  display: inline-flex;
+  background-color: rgba(0, 0, 0, 0.368627451);
+  border-radius: 10px;
+  padding: 5px;
+}
+.content p:hover {
+  background-color: rgba(0, 0, 0, 0.4274509804);
+}
+
+.dubai {
+  font-size: 50px;
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 2%;
+  position: relative;
+}
+.dubai::before {
+  display: inline-flex;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  bottom: -4px;
+  background: #FAC549;
+}
+.dubai:hover::before {
+  width: 100%;
+}
+.dubai::after {
+  display: inline-flex;
+  position: absolute;
+  content: "";
+  width: 0%;
+  height: 2px;
+  transition: 0.4s;
+  bottom: 50px;
+  background: #FAC549;
+}
+.dubai:hover::after {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 850px;
+  padding: 20px 20%;
+  margin-top: 8%;
+  font-size: 1.5rem;
+  flex: 1 1 auto;
+}
+@media (width < 900px) {
+  .description {
+    height: 1050px;
+  }
+}
+@media (width < 500px) {
+  .description {
+    height: 1400px;
+  }
+}
+@media (width < 380px) {
+  .description {
+    height: 1800px;
+  }
+}
+@media (width < 700px) {
+  .description {
+    padding: 10px;
+  }
+}
+
+footer {
+  flex-shrink: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  max-height: 350px;
+  min-height: 280px;
+  font-size: 30px;
+  background: url(../icons/pattern\ copy.svg);
+  background-size: cover;
+}
+footer .footDescription {
+  display: inline-flex;
+  text-align: center;
+}
+footer .socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+}
+footer .Media {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  margin: auto;
+}
+@media (width < 768px) {
+  footer .Media {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (width < 540px) {
+  footer figcaption {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=style.css.map */

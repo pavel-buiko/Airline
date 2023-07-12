@@ -1,0 +1,292 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../../fonts/Roboto-Light.ttf);
+}
+
+$gold:#FAC549;
+a {
+    text-decoration: none;
+    color: #fff;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: Roboto
+}
+
+
+body {
+    background-image: url(../images/thomas-drouault-3dGU4xziUAM-unsplash.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: aliceblue;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    font-size: 22px;
+
+    &::after {
+        display: block;
+        content: "";
+        position: absolute;
+        background-color: #00000049;
+        height: 100%;
+        width: 100%;
+        min-height: 100%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+    .headerwrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       }
+    }
+
+
+
+
+header {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #0000007c;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+        .menu, ul,  ul li, div,a{
+            align-items: flex-end;
+            display:inline-flex;
+            justify-content: flex-end;
+        }
+        ul {
+            width: 100%;
+        }
+        img {
+            height: 50px;
+            width: 50px;
+        }
+
+        li{
+
+            height: 100%;
+            margin: auto 20px;
+            list-style: none;
+            font-size: 18px;
+            &:last-of-type{
+                margin-right: 5px;
+            }
+            &:first-of-type {
+                margin-left: 5px;
+                text-align: right;
+            }
+            @media (min-width:1440px) {
+                margin:auto 30px;
+                font-size: 22px;
+            }
+
+
+
+            @media(width<740px) {
+                   margin:auto 5px;
+                   font-size: 16px;
+           }
+
+           @media (width < 390px) {
+            font-size: 10px;
+            max-width: 60px;
+            margin: auto 5px;
+           }
+
+           @media (width <340px) {
+            font-size: 9px;
+            margin: auto 3px;
+           }
+        }
+
+        a {
+            text-align: center;
+            width: 150px;
+            @media (width < 600px) {
+                max-width: 80px;
+            }
+        }
+
+
+        .firstLink {
+
+            position: relative;
+            &::after{
+                position: absolute;
+                content:"";
+                width: 0%;
+                height: 2px;
+                transition: 0.4s;
+                right: 0;
+                bottom: -3px;
+                background: $gold;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+            &:hover {
+                transition: 1s;
+                text-shadow: 1px 1px 2px rgba(91, 91, 91, 0.705);
+            }
+        }
+
+    .secondLink {
+            position: relative;
+            &::after{
+                position: absolute;
+                content:"";
+                width: 0%;
+                height: 2px;
+                transition: 0.4s;
+                left: 0;
+                bottom: -3px;
+                background: $gold;
+            }
+            &:hover::after{
+                width: 100%;
+            }
+
+            &:hover {
+                transition: 1s;
+                text-shadow: 1px 1px 2px rgba(91, 91, 91, 0.705);
+            }
+            }
+}
+
+
+.content {
+    display: flex;
+    flex: 1 1 auto;
+    flex-direction: column;
+    padding-top: 10%;
+    @media (width<400px) {
+        padding-top: 15%;
+    }
+
+    p {
+        box-sizing: border-box;
+        display: inline-flex;
+        background-color: #0000005e;
+        border-radius: 10px;
+        padding: 5px;
+        &:hover {
+            background-color: #0000006d;
+        }
+    }
+}
+
+.dubai {
+    font-size: 50px;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2%;
+    position: relative;
+    &::before{
+        display: inline-flex;
+        position: absolute;
+        content:"";
+        width: 0%;
+        height: 2px;
+        transition: 0.4s;
+        bottom: -4px;
+        background: $gold;
+
+    }
+    &:hover::before{
+        width: 100%;
+    }
+
+    &::after{
+        display: inline-flex;
+        position: absolute;
+        content:"";
+        width: 0%;
+        height: 2px;
+        transition: 0.4s;
+        bottom: 50px;
+        background: $gold;
+
+    }
+    &:hover::after{
+        width: 100%;
+    }
+
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 850px;
+    padding: 20px 20%;
+    margin-top: 8%;
+    font-size: 1.5rem;
+    flex: 1 1 auto ;
+    @media (width<900px) {
+        height: 1050px;
+    }
+    @media (width <500px) {
+        height: 1400px;
+    }
+    @media (width < 380px) {
+        height: 1800px;
+    }
+    @media (width <700px) {
+        padding: 10px;
+    }
+}
+
+footer {
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    max-height: 350px;
+    min-height: 280px;
+    font-size: 30px;
+    background: url(../icons/pattern\ copy.svg);
+    background-size: cover;
+    .footDescription {
+        display: inline-flex;
+        text-align: center;
+    }
+
+    .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .Media {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        margin: auto;
+        @media (width < 768px) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    figcaption {
+        @media (width <540px) {
+            font-size: 12px;
+        }
+    }
+
+}
