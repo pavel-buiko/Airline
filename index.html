@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/sass/styles.css">
+    <link rel="stylesheet" href="/airDatepicker/air-datepicker.css">
+    <script src="/script/selector.js"></script>
+    <script src="/script/file.js"></script>
+    <script src="/airDatepicker/air-datepicker.js" ></script>
+
+    <title>Upper Sky</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="menu">
+                <div>
+                    <ul>
+                        <li><a class="firstLink" href=""> Главная</a></li>
+                        <li><a class="firstLink" href=""> Направления</a></li>
+                        <li><img src="../images/LogoBlack.svg" alt="icon" class="Logo"></li>
+                        <li><a class="secondLink" href="">Ваша поездка</a></li>
+                        <li><a class="secondLink" href="">Путешествие</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <div class="main">
+            <div class="content">
+                <div class="moreThenTrip">
+                    <div class="more__wrapper">
+                        <div class="firstPart">
+                            <div class="trip">
+                                <h3>Больше чем просто путешествие</h3>
+                                <p class="head__text">Upper Sky продолжает незамедлительно стремиться к новым стандартам качества и улучшению вашего комфорта</p>
+                            </div>
+                            <div class="units">
+                                <div class="child passangers">  <div class="blueRect"> <div class="blueRect__text">+7M</div> </div><div class="blueText">Пассажиров</div> <div class="blue__subtext"> За прошлый год наша авиакомпания смогла привлеч 7 миллионов человек к выбору именно наших полётов</div></div>
+                                <div class="child destinations"> <div class="blueRect">+44</div><div class="blueText">Пункта назначения</div> <div class="blue__subtext">Мы доставляем пассажиров в 10 мест на этой планете </div></div>
+                                <div class="child unit"><div class="blueRect">+58</div><div class="blueText">Единиц</div><div class="blue__subtext">Мы ежегодно расширяем свой авиапарк лучшими экзэмплярами</div></div>
+                            </div>
+                        </div>
+
+
+                        <div class="department">
+                            <div class="department__content">
+                                <h6>МЕСТО ОТПРАВЛЕНИЯ</h6>
+                                <div class="Department__port">
+                                    <h1 class="department__city">Аэропорт Минск</h1>
+                                    <div class="department__portName">Минск</div>
+                                </div>
+                                <div class="changeIconWrapper">
+                                    <img class="refresh" src="../icons/refresh-ccw.svg" alt="refresh">
+                                </div>
+                                <h6>МЕСТО ПРИБЫТИЯ</h6>
+                                <h1 id="cityName" class="department__city">Название</h1>
+                                <div id="portName" class="department__portName">Город </div>
+                                <div class="dropdown">
+                                    <input class="dropdown__btn" id="button" type="button" value="Аэропорт Минск (Минск)">
+                                    <ul class=" dropdown__list" id="departmentList" ></ul>
+                                </div>
+                                <h6 >ПРЕДПОЧТИТЕЛЬНАЯ ДАТА ОТПРАВЛЕНИЯ</h6>
+                                <input class="datepicker" type="text" id="input" autocomplete="off" value="Введите дату" >
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="specialOffers">
+                    <div class="headerWrapper">
+                        <h3 class="offers__header">Специальные предложения</h3>
+                    </div>
+
+                    <div class="offers">
+                        <a href="/trips/umah/index.html" class="mainOffer">
+                            <img class="mainOffer__image" src="../images/omrah.jpg" alt="omrah">
+                            <div class="offers__text">Тур в Мекку - это незабываемый опыт для тех, кто стремится увидеть и познать многовековую историю и культуру Саудовской Аравии. Независимо от того, являетесь ли вы паломником или туристом, полет в Мекку предоставит вам возможность ощутить непередаваемую атмосферу и узнать больше о местных обычаях и традициях.</div>
+                            <div class="offers__text">Забронировать билет эконом класса</div>
+                            <div class="Firstprice">usd 1200$ </div>
+                        </a>
+                        <div class="secondaryOffers">
+                            <a href="../trips/dubai/index.html" class="secondaryOffers__item">
+
+                                <img class="secondaryOffers__image" src="../images/dubai_1.png" alt="dubai">
+                                <div class="secondaryOffers__text__wrapper">
+                                    <div class="secondaryOffers__text">Путешествуйте в Дубай сегодня и создайте незабываемые воспоминания на всю жизнь!</div>
+                                    <div class="offers__text">Забронировать билет эконом класса</div>
+                                    <div class="price">usd 1000$ </div>
+                                </div>
+                            </a>
+                            <a href="../trips/paris/index.html" class="secondaryOffers__item">
+                                <img class="secondaryOffers__image" src="../images/paris_1.png" alt="paris">
+                                <div class="secondaryOffers__text__wrapper">
+                                    <div class="secondaryOffers__text">Не упустите шанс увидеть один из самых красивых городов мира - Париж!</div>
+                                    <div class="offers__text">Забронировать билет эконом класса</div>
+                                    <div class="price">usd 700$ </div>
+                                </div>
+                            </a>
+                            <a href="../trips/bangkok/index.html" class="secondaryOffers__item" >
+                                <img class="secondaryOffers__image" src="../images/bangkok_1.png" alt="bangkok">
+                                    <div class="secondaryOffers__text__wrapper">
+                                    <div class="secondaryOffers__text">Насладитесь богатой историей и яркой атмосферой, где вы найдете удивительные храмы, душевных людей всё это - Бангкок.</div>
+                                    <div class="offers__text">Забронировать билет эконом класса</div>
+                                    <div class="price">usd 950$ </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+            <div class="footerWrap">
+                <footer class="footer">
+                    <div class="container">
+                        <div class="neverMiss">
+                            <h3 class="footerHead">
+                                Никогда не упускайте предложения
+                            </h3>
+                            <p>Подпишитесь на нашу рассылку и получайте самую свежую информацию об акциях и скидках</p>
+                        </div>
+                        <div class="subscribe">
+                            <div class="emailWrapper">
+                                <input id="input" class="email__input" type="email" placeholder="youremail@gmail.com" name="email" >
+                                <hr>
+                                <input class="email__city" type="text" placeholder="Ваш город" >
+                            </div>
+                            <div class="checkWrapper">
+                                <label class="checkbox__label">
+                                    <input class="checkbox" type="checkbox" name="check" id="checkbox__1">
+                                    <span class="fake"></span>
+                                    <span class="checkbox__text"> Я принимаю предложение о рассылке информации об акциях и скидках от Upper Sky.</span>
+                                </label>
+                            </div>
+                            <input  class="button" type="button" value="Подписаться">
+
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    new AirDatepicker('#input');
+</script>
+</html>
